@@ -22,17 +22,32 @@ body {
 .current-weather-container {
 	display: flex;
 	align-items: end;
+	gap: 30px;
 	margin: 60px;
 }
 
 .temperature {
+	position: relative;
+	top: 15px;
 	font-size: 88px;
 }
 
 .city-and-date {
-	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .city-and-date h2 {
 	font-size: 44px;
+}
+
+.weather-icon-and-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-icon {
+	font-size: 34px;
 }
