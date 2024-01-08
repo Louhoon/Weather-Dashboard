@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	box-sizing: border-box;
 }
 
 body {
@@ -11,10 +10,29 @@ body {
 
 .container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #9893A9;
-	height: 60vh;
-	margin: 20vh 550px;
+	width: 900px;
+	height: 600px;
+	margin: 100px auto;
 	border: 1px solid transparent;
 	border-radius: 25px;
+}
+
+.current-weather-container {
+	display: flex;
+	align-items: end;
+	margin: 60px;
+}
+
+.temperature {
+	font-size: 88px;
+}
+
+.city-and-date {
+	margin: 0 20px;
+}
+
+.city-and-date h2 {
+	font-size: 44px;
 }
