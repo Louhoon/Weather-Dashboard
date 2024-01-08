@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weather Dashboard</title>
 </head>
+
 <body>
-	
+	<div class="container">
+		<h1 class="temperature">15°</h1>
+		<h2 class="current-city">Paris</h2>
+		<p class="date">Monday, <span class="current-time">15:55</span></p>
+		<div class="weather-icon-and-description">
+			<p class="weather-icon">🌧️</p>
+			<p class="weather-description">Rainy</p>
+		</div>
+		<div class="search-container">
+			<form action="submit" class="search-form">
+				<input type="text" placeholder="Enter a Location" class="search-input">
+				<input type="submit" value="🔍" class="submit-input">
+			</form>
+			<h3 class="weather-details">Weather Details</h3>
+			<ul class="details-list">
+				<li id="data-cloud">Cloud <span class="data-value">90%</span></li>
+				<li id="data-humidity">Humidity <span class="data-value">45%</span></li>
+				<li id="data-wind">Wind <span class="data-value">10km/h</span></li>
+				<li id="data-rain">Rain <span class="data-value">5mm</span></li>
+			</ul>
+		</div>
+	</div>
 </body>
+
 </html>
