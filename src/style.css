@@ -2,5 +2,19 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	box-sizing: border-box;
 }
 
+body {
+	background-color: #3E343D;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	background-color: #9893A9;
+	height: 60vh;
+	margin: 20vh 550px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+}
