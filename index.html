@@ -27,12 +27,20 @@
 				<input type="submit" value="🔍" class="submit-input">
 			</form>
 			<h3 class="weather-details">Weather Details</h3>
-			<ul class="details-list">
-				<li id="data-cloud">Cloud <span class="data-value">90%</span></li>
-				<li id="data-humidity">Humidity <span class="data-value">45%</span></li>
-				<li id="data-wind">Wind <span class="data-value">10km/h</span></li>
-				<li id="data-rain">Rain <span class="data-value">5mm</span></li>
-			</ul>
+			<div class="weather-details-container">
+				<ul class="details-list">
+					<li class="data-value" id="data-cloud">Cloud</li>
+					<li class="data-value" id="data-humidity">Humidity</li>
+					<li class="data-value" id="data-wind">Wind</li>
+					<li class="data-value" id="data-rain">Rain </li>
+				</ul>
+				<ul class="details-value">
+					<li class="data-value"><strong>90%</strong></li>
+					<li class="data-value"><strong>45%</strong></li>
+					<li class="data-value"><strong>10km/h</strong></li>
+					<li class="data-value"><strong>5mm</strong></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<script src="src/index.js"></script>

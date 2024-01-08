@@ -16,6 +16,11 @@ input::placeholder {
 	color: white;
 }
 
+h3 {
+	margin-top: 20px;
+	font-weight: 500;
+}
+
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -70,14 +75,37 @@ input::placeholder {
 	border: none;
 	background-color: transparent;
 	padding: 10px;
+	margin-right: 10px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .submit-input {
-	background-color: #7B7486;
+	background-color: rgba(255, 255, 255, 0.3);
 	border: none;
 	padding: 10px;
 	font-size: 20px;
 	border-top-right-radius: 25px;
+}
+
+.weather-details-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0;
+	margin-right: 20px;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.data-value {
+	margin: 18px 0;
+}
+
+.details-list {
+	text-align: start;
+}
+
+.details-value {
+	text-align: end;
 }
