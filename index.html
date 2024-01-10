@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weather Dashboard</title>
 	<link rel="stylesheet" href="/src/style.css">
-</head>
-
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 <body>
 	<div class="container">
 		<div class="current-weather-container">
@@ -17,22 +17,22 @@
 				<p class="date">Monday<span class="current-time"> - 15:55</span></p>
 			</div>
 			<div class="weather-icon-and-description">
-				<p class="weather-icon">🌧️</p>
+				<p class="weather-icon"><i class="las la-cloud-rain"></i></p>
 				<p class="weather-description">Rainy</p>
 			</div>
 		</div>
 		<div class="search-container">
 			<form action="submit" class="search-form">
-				<input type="search" placeholder="Enter a Location" class="search-input">
-				<input type="submit" value="🔍" class="submit-input">
+				<input type="search" placeholder="Enter a Location" class="search-input" required autofocus="on">
+				<button class="search-btn"><i class="las la-search"></i></button>
 			</form>
 			<h3 class="weather-details">Weather Details</h3>
 			<div class="weather-details-container">
 				<ul class="details-list">
-					<li class="data-value" id="data-cloud">Cloud</li>
-					<li class="data-value" id="data-humidity">Humidity</li>
-					<li class="data-value" id="data-wind">Wind</li>
-					<li class="data-value" id="data-rain">Rain </li>
+					<li class="data-value" id="data-cloud"><i class="las la-cloud"></i>Cloud</li>
+					<li class="data-value" id="data-humidity"><i class="las la-tint"></i>Humidity</li>
+					<li class="data-value" id="data-wind"><i class="las la-wind"></i>Wind</li>
+					<li class="data-value" id="data-rain"><i class="las la-umbrella"></i>Rain </li>
 				</ul>
 				<ul class="details-value">
 					<li class="data-value"><strong>90%</strong></li>
