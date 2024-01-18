@@ -14,11 +14,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
 <body>
 	<div class="container">
 		<div class="current-weather-container">
-			<h1 class="temperature">15°</h1>
+			<h1 class="temperature" id="current-temperature">15°</h1>
 			<div class="city-and-date">
 				<h2 class="current-city" id="city">Paris</h2>
 				<p class="date">Monday<span class="current-time"> - 15:55</span></p>
@@ -30,7 +31,8 @@
 		</div>
 		<div class="search-container">
 			<form action="submit" class="search-form" id="search-form">
-				<input type="search" placeholder="Enter a Location" class="search-input" id="search-input" required autofocus="on">
+				<input type="search" placeholder="Enter a Location" class="search-input" id="search-input" required
+					autofocus="on">
 				<button class="search-btn"><i class="las la-search"></i></button>
 			</form>
 			<h3 class="weather-details">Weather Details</h3>
