@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #3e343d;
+  background-color: #2a2438;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -27,7 +27,7 @@ h3 {
 .container {
   display: flex;
   justify-content: space-between;
-  background-color: #9893a9;
+  background-color: #5c5470;
   width: 900px;
   height: 600px;
   margin: 100px auto;
@@ -70,7 +70,7 @@ h3 {
 }
 
 .search-container {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #dbd8e3;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-left: 20px;
