@@ -19,14 +19,14 @@
 <body>
 	<div class="container">
 		<div class="current-weather-container">
-			<h1 class="temperature" id="current-temperature">15°</h1>
+			<h1 class="temperature" id="current-temperature"></h1>
 			<div class="city-and-date">
-				<h2 class="current-city" id="city">Paris</h2>
-				<p class="date">Monday<span class="current-time"> - 15:55</span></p>
+				<h2 class="current-city" id="city"></h2>
+				<p class="date" id="date-and-time"><span class="current-time"></span></p>
 			</div>
 			<div class="weather-icon-and-description">
 				<p class="weather-icon"><i class="las la-cloud-rain"></i></p>
-				<p class="weather-description">Rainy</p>
+				<p class="weather-description" id="weather-description"></p>
 			</div>
 		</div>
 		<div class="search-container">
@@ -42,8 +42,8 @@
 					<li class="data-value" id="data-wind"><i class="las la-wind"></i>Wind</li>
 				</ul>
 				<ul class="details-value">
-					<li class="data-value"><strong>45%</strong></li>
-					<li class="data-value"><strong>10km/h</strong></li>
+					<li class="data-value" id="humidity-value"><strong></strong></li>
+					<li class="data-value" id="wind-value"><strong></strong></li>
 				</ul>
 			</div>
 		</div>
