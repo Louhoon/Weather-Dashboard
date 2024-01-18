@@ -55,7 +55,7 @@ h3 {
 }
 
 .city-and-date h2 {
-  font-size: 38px;
+  font-size: 34px;
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
@@ -91,6 +91,11 @@ h3 {
   padding: 10px 15px;
   font-size: 20px;
   border-top-right-radius: 25px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .la-search {
