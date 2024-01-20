@@ -16,7 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-<body>
+<body class="light">
+	<button class="dark-mode-btn" id="dark-btn">🌞</button>
 	<div class="container">
 		<div class="current-weather-container">
 			<h1 class="temperature" id="current-temperature"></h1>
@@ -48,8 +49,9 @@
 			</div>
 		</div>
 	</div>
-	<footer><p>- Coded by <a href="https://www.linkedin.com/in/louane-voisin-anastasie42" target="_blank">Louane Voisin-Anastasie</a>, open-source on <a href="https://github.com/Louhoon/Weather-Dashboard" target="_blank">Github</a> and hosted on <a href="https://meteo-dashboard.netlify.app/" target="_blank">Netlify</a> -</p></footer>
+	<footer><p id="footer-info">- Coded by <a href="https://www.linkedin.com/in/louane-voisin-anastasie42" target="_blank">Louane Voisin-Anastasie</a>, open-source on <a href="https://github.com/Louhoon/Weather-Dashboard" target="_blank">Github</a> and hosted on <a href="https://meteo-dashboard.netlify.app/" target="_blank">Netlify</a> -</p></footer>
 	<script src="src/index.js"></script>
+	<script src="/src/darkMode.js"></script>
 </body>
 
 </html>

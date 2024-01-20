@@ -5,7 +5,7 @@
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -20,6 +20,14 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
+}
+
+.light {
+  background-image: url("/src/images/light-ciel.jpg");
+}
+
+.light a {
+  color: #727272;
 }
 
 input:focus {
@@ -158,4 +166,19 @@ footer {
 
 .details-value {
   text-align: end;
+}
+
+.dark-mode-btn {
+  padding: 5px 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
 }
