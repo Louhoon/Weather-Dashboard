@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #2a2438;
+  background-image: url("/src/images/ciel.jpg");
+  color: rgb(197, 196, 196);
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -27,12 +29,12 @@ h3 {
 .container {
   display: flex;
   justify-content: space-between;
-  background-color: #5c5470;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 900px;
   height: 600px;
   margin: 100px auto;
   border-radius: 25px;
-  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .current-weather-container {
@@ -70,7 +72,7 @@ h3 {
 }
 
 .search-container {
-  background-color: #dbd8e3;
+  background-color: rgba(255, 255, 255, 0.3);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-left: 20px;
@@ -121,6 +123,10 @@ h3 {
 
 .data-value {
   margin: 18px 0;
+}
+
+.data-value strong {
+  color: #f2f9f1;
 }
 
 .details-list {
