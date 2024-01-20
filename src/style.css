@@ -4,6 +4,15 @@
   list-style: none;
 }
 
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background-image: url("/src/images/ciel.jpg");
   color: rgb(197, 196, 196);
@@ -32,6 +41,12 @@ img {
   width: 68px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -39,6 +54,7 @@ img {
   width: 900px;
   height: 600px;
   margin: 100px auto;
+  margin-bottom: 30px;
   border-radius: 25px;
   box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
 }
