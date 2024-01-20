@@ -4,11 +4,11 @@ function toggleLightMode() {
 	
 	if (body.classList.contains("light")) {
 		body.classList.remove("light");
-		btn.innerHTML = "🌜"
+		btn.innerHTML = "🌞";
 	}
 	else {
 		body.classList.add("light");
-		btn.innerHTML = "🌞";
+		btn.innerHTML = "🌜";
 	}
 }
 
