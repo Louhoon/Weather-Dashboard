@@ -16,7 +16,6 @@ function refreshWeather(response) {
   dateAndTimeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
 
-
   getForecast(response.data.city);
 }
 
@@ -64,32 +63,46 @@ function displayCurrentCity(event) {
   searchCity(searchInput.value);
 }
 
+function formatDay(timeStamp) {
+
+  let date = new Date(timeStamp * 1000);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  return days[date.getDay()];
+}
+
+
 function displayforecast(response) {
-
-
-  console.log(response.data);
-
-
-  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml += `
-    <div class="row">
-    <div class="col-2">
-    <i class="las la-cloud-sun-rain"></i>
-    <div class="forecast-date">
-    ${day}
-    <div class="weather-forecast-description">broken clouds</div>
-    </div>
-    </div>
-    <div class="forecast-temperature">
-    <div class="weather-forecast-temperature-max">16°</div>
-    <div class="weather-forecast-temperature-min">9°</div>
-    </div>
-    </div>`;
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      let temperatureMin = Math.round(day.temperature.minimum);
+      let temperatureMax = Math.round(day.temperature.maximum);
+      forecastHtml += `
+        <div class="row">
+        <div class="col-2">
+        <img class="forecast-icon" src="${day.condition.icon_url}">
+        <div class="forecast-date">
+        ${formatDay(day.time)}
+        <div class="weather-forecast-description">${day.condition.description}</div>
+        </div>
+        </div>
+        <div class="forecast-temperature">
+        <div class="weather-forecast-temperature-max">${temperatureMax}°</div>
+        <div class="weather-forecast-temperature-min">${temperatureMin}°</div>
+        </div>
+        </div>`;
+    }
   });
-
   let forecast = document.querySelector("#forecast");
   forecast.innerHTML = forecastHtml;
 }
