@@ -186,3 +186,52 @@ footer {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.forecast-title {
+  color: #fff;
+  font-size: 18px;
+  margin: 30px 0;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.forecast-temperature {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 15px;
+  text-align: center;
+}
+
+.weather-forecast-temperature-min {
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.forecast-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-2 {
+  display: flex;
+}
+
+.la-cloud-sun-rain {
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.weather-forecast-description {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
