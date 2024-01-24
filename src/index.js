@@ -15,6 +15,9 @@ function refreshWeather(response) {
   windElement.innerHTML = `<strong>${response.data.wind.speed}km/h</strong>`;
   dateAndTimeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
+
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -59,6 +62,42 @@ function displayCurrentCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
   searchCity(searchInput.value);
+}
+
+function displayforecast(response) {
+
+
+  console.log(response.data);
+
+
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml += `
+    <div class="row">
+    <div class="col-2">
+    <i class="las la-cloud-sun-rain"></i>
+    <div class="forecast-date">
+    ${day}
+    <div class="weather-forecast-description">broken clouds</div>
+    </div>
+    </div>
+    <div class="forecast-temperature">
+    <div class="weather-forecast-temperature-max">16°</div>
+    <div class="weather-forecast-temperature-min">9°</div>
+    </div>
+    </div>`;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
+function getForecast(city) {
+  let apiKey = "3b7o30109b4aft0712c02563ba2bbf20";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayforecast);
 }
 
 let search = document.querySelector("#search-form");

@@ -16,8 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-<body class="light">
-	<button class="dark-mode-btn" id="dark-btn">🌜</button>
+<body>
 	<div class="container">
 		<div class="current-weather-container">
 			<h1 class="temperature" id="current-temperature"></h1>
@@ -47,22 +46,8 @@
 					<li class="data-value" id="wind-value"><strong></strong></li>
 				</ul>
 			</div>
-			<div class="weather-forecast">
-				<h2 class="forecast-title">The Next Days Forecast</h2>
-				<div class="row">
-					<div class="col-2">
-						<i class="las la-cloud-sun-rain"></i>
-						<div class="forecast-date">
-							Thursday
-							<div class="weather-forecast-description">broken clouds</div>
-						</div>
-					</div>
-					<div class="forecast-temperature">
-						<div class="weather-forecast-temperature-max">16°</div>
-						<div class="weather-forecast-temperature-min">9°</div>
-					</div>
-				</div>
-			</div>
+			<h2 class="forecast-title">The Next Days Forecast</h2>
+			<div class="weather-forecast" id="forecast"></div>
 		</div>
 	</div>
 	<footer>
@@ -72,7 +57,6 @@
 				href="https://meteo-dashboard.netlify.app/" target="_blank">Netlify</a> -</p>
 	</footer>
 	<script src="src/index.js"></script>
-	<script src="/src/darkMode.js"></script>
 </body>
 
 </html>
