@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -45,8 +46,11 @@ h3 {
   color: rgb(255, 255, 255);
 }
 
-img {
-  width: 64px;
+.icon img {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  top: -16px;
 }
 
 footer {
@@ -59,7 +63,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 900px;
+  width: 1000px;
   height: 600px;
   margin: 100px auto;
   margin-bottom: 30px;
@@ -76,7 +80,7 @@ footer {
 
 .temperature {
   position: relative;
-  top: 15px;
+  top: 21px;
   font-size: 88px;
 }
 
@@ -97,8 +101,8 @@ footer {
   align-items: center;
 }
 
-.weather-icon {
-  font-size: 34px;
+.icon {
+  height: 34px;
 }
 
 .search-container {
